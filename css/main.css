@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #00014a, #281f6f);
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.layer:nth-child(1) {
+  background-image: url("../image/1.png");
+}
+.layer:nth-child(2) {
+  background-image: url("../image/2.png");
+}
+.layer:nth-child(3) {
+  background-image: url("../image/3.png");
+}
+.layer:nth-child(4) {
+  background-image: url("../image/4.png");
+}
+.layer:nth-child(5) {
+  background-image: url("../image/5.png");
+}
+.layer:nth-child(6) {
+  background-image: url("../image/6.png");
+}
+.layer:nth-child(7) {
+  background-image: url("../image/7.png");
+}
+
+/* new container classes */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 38%;
+  position: absolute;
+  z-index: 10;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  gap: 4rem;
+  margin-left: 15vh;
+}
+
+#button{
+  box-shadow: 0 0 5px #5bc0de,0 0 25px #5bc0de;
+  transition: 0.3s box-shadow ease;
+  background-color:  #5bc0de;
+  height:54px;
+  width:180px;
+  border-radius:34px;
+  font-size: 20px;
+  font-weight: 500;
+  border:none;
+}
+
+
+
+
+
+
+

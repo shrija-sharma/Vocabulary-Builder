@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/parallax.css">
+    <style>
+        .btns{
+            display: flex;
+            gap:-20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img class="layer-1" src="../parralax_image/background.png">
+        <img class="layer-2" src="../parralax_image/meteor.png">
+
+        <div class="layer-3">
+            <h1>Hello & Welcome </h1>
+            <p>Building vocabulary enhances communication skills, boosts cognitive function, fosters clearer thinking, enriches writing, improves reading comprehension, facilitates learning new concepts, enhances memory retention, and empowers effective expression and articulation.</p>
+            <div class="btns">
+            <a onclick="getDictionaryUrl()">Lets's Search</a>  
+            <a onclick="getWordsUrl()">Learn new word</a>
+            </div>
+        </div>
+        <img class="layer-4" src="../parralax_image/4.png">
+        <img class="layer-5" src="../parralax_image/5.png">
+        <img src="../parralax_image/6.png">
+    </div>
+
+    <div class="content">
+        <h1>How can you increase your Vocabulary</h1>
+        <p>Utilizing a dictionary effectively can significantly enhance vocabulary acquisition. Start by setting a daily goal to learn a new word. Make it a habit to designate a specific time each day to explore the dictionary and select a word you're unfamiliar with. As you delve into the word's entry, pay attention not only to its definition but also to its pronunciation and usage examples. By systematically engaging with new words on a regular basis, you'll find yourself steadily expanding your lexicon.</p>
+
+        <p>Delve deeper into the dictionary's entries to explore related words and concepts. Rather than simply stopping at the definition of the word you've chosen, take the opportunity to investigate its synonyms, antonyms, and word origins. Understanding how a word fits into various contexts and its connections to other words can provide a more holistic comprehension. Additionally, exploring word families and etymology offers fascinating insights into the historical evolution of language, enriching your understanding of vocabulary on a deeper level.</p>
+
+        <p>Finally, actively incorporate newly learned words into daily communication. Challenge yourself to integrate these words into conversations, written correspondence, and any other form of expression. The more you practice using these words in different contexts, the more ingrained they become in your memory. Repetition and application are key for solidifying new vocabulary into your lexicon. With consistent effort and engagement, you'll find your vocabulary growing steadily, enhancing not only your expressive ability but also your overall language proficiency.</p>
+    </div>
+
+
+    <script type="text/javascript"> 
+        let layer1 = document.querySelector('.layer-1');
+        let layer2 = document.querySelector('.layer-2');
+        let layer3 = document.querySelector('.layer-3');
+        let layer4 = document.querySelector('.layer-4');
+        let layer5 = document.querySelector('.layer-5');
+
+
+        window.onscroll = function(){
+            let y = window.scrollY;
+
+            layer1.style.transform = 'translateY('+y/1.5+'px)';
+            layer2.style.transform = 'translateY('+y/1.5+'px)';
+            layer3.style.transform = 'translateY('+y/1.5+'px)';
+            layer4.style.transform = 'translateY('+y/2+'px)';
+            layer5.style.transform = 'translateY('+y/3+'px)';
+
+        }
+
+        function getDictionaryUrl(){
+            window.location.href = "../html/card.html";
+        }
+
+        function getWordsUrl(){
+            window.location.href= "../html/word.html";
+        }
+    </script>
+</body>
+</html>
+

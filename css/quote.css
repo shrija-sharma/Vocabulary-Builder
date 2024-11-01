@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color:#200366;
+    padding: 2rem;
+}
+
+.quote-wrapper{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 4rem 1.5rem;
+    border:4px black solid;
+}
+
+.quote-wrapper h2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.quote-wrapper small{
+    font-weight: 700;
+    padding: 0.2rem 1rem;
+    color: #2d132c;
+   
+}
+
+.quote-wrapper blockquote{
+    padding: 1.4rem 0;
+
+}
+
+.quote-wrapper cite{
+    display: block;
+    font-size: normal;
+    margin-bottom:1rem ;
+}
+ 
+#gen-quote{
+   
+    background-color:cornflowerblue;
+    height:54px;
+    width:180px;
+    border-radius:34px;
+    font-size: 20px;
+    font-weight: 500;
+    border:none;
+    color:#fff;
+  }
+
+  #gen-quote:hover{
+    background-color:#200366;
+    transform: translateY(-2px);
+  
+  }
+
+
+  

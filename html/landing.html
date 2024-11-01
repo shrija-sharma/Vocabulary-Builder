@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>try</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+      #main{
+        font-size: 55px;
+        color: #00ced1;
+      }
+
+      #under{
+        font-size: 20px;
+        color: #00ced1;
+      }
+
+      /* Typewriter Effect */
+      @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+      }
+  
+      .typewriter-text {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 2s steps(40) infinite alternate;
+      }
+      @keyframes bounce {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+      }
+
+      .scale-hover {
+        animation: bounce 1s infinite;
+      }
+      
+      .btns{
+        display: flex;
+        gap:20px ;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- new container -->
+    <div class="info-container">
+      <!-- for main heading -->
+      <h1 id="main" class="typewriter-text" >Vocabulary <br />Builder</h1>
+
+
+      <span id="under" class="scale-hover">Come with us and grow your Vocabulary <br> with our digital dictionary</span>
+
+      <!-- get started button -->
+      <div class="btns">
+        <button onclick=getParallaxUrl() id="button" class="get-started-btn">Get Started</button>
+        <button onclick=getQuoteUrl() id="button" class="get-started-btn">Get Quote</button>
+
+      </div>
+      
+    </div>
+    
+    <div class="container">
+      <div class="layer"></div> 
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+    </div>
+
+    <script src="../js/landing.js"></script>
+  </body>
+</html>
